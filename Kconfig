@@ -1,0 +1,8 @@
+config LIB_PICORO
+    bool "Build libpicoro"
+    select LIB_SEL4
+    select LIB_SEL4_C
+    select HAVE_SEL4_LIBS
+    default y
+    help 
+        "Slim C coroutine library by Tony Finch"
